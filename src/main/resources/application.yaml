@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: ${MYSQL_USER:shivam}
+    password: ${MYSQL_PASSWORD:Shivam@123}
+    url: jdbc:mysql://localhost:3306/grocery_shop
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+server:
+  port: 8080
